@@ -1,0 +1,11 @@
+framework module OkHi {
+  umbrella header "OkHi.h"
+
+  export *
+  module * { export * }
+}
+
+module OkHi.Swift {
+    header "OkHi-Swift.h"
+    requires objc
+}

@@ -4,11 +4,22 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>OkHiExample.xcscheme_^#shared#^_</key>
+		<key>OkHi.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>0</integer>
+		</dict>
+		<key>Pods-OkHiExample.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict/>
 </dict>
 </plist>

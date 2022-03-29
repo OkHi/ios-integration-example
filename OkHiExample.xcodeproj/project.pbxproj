@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1174589C096F60AF3B0DF195 /* libPods-OkHiExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3785820D456BC971F4CB2C59 /* libPods-OkHiExample.a */; };
 		6D881E7627F3676500D9C3D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D881E7527F3676500D9C3D3 /* AppDelegate.swift */; };
 		6D881E7827F3676500D9C3D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D881E7727F3676500D9C3D3 /* SceneDelegate.swift */; };
 		6D881E7A27F3676500D9C3D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D881E7927F3676500D9C3D3 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C1D5A9FCE2AD1F7008A0AD1 /* Pods-OkHiExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OkHiExample.release.xcconfig"; path = "Target Support Files/Pods-OkHiExample/Pods-OkHiExample.release.xcconfig"; sourceTree = "<group>"; };
+		3785820D456BC971F4CB2C59 /* libPods-OkHiExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OkHiExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		672BD996F17B60EC3FCAAC1A /* Pods-OkHiExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OkHiExample.debug.xcconfig"; path = "Target Support Files/Pods-OkHiExample/Pods-OkHiExample.debug.xcconfig"; sourceTree = "<group>"; };
 		6D881E7227F3676500D9C3D3 /* OkHiExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OkHiExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D881E7527F3676500D9C3D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D881E7727F3676500D9C3D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1174589C096F60AF3B0DF195 /* libPods-OkHiExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				6D881E7427F3676500D9C3D3 /* OkHiExample */,
 				6D881E7327F3676500D9C3D3 /* Products */,
+				95CB61F3B0828CBCBD4B6A61 /* Pods */,
+				8ABFD393C976B010FE1B6F31 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = OkHiExample;
 			sourceTree = "<group>";
 		};
+		8ABFD393C976B010FE1B6F31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3785820D456BC971F4CB2C59 /* libPods-OkHiExample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95CB61F3B0828CBCBD4B6A61 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				672BD996F17B60EC3FCAAC1A /* Pods-OkHiExample.debug.xcconfig */,
+				1C1D5A9FCE2AD1F7008A0AD1 /* Pods-OkHiExample.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D881E8627F3676700D9C3D3 /* Build configuration list for PBXNativeTarget "OkHiExample" */;
 			buildPhases = (
+				F80842E3C7D8ECC094193E44 /* [CP] Check Pods Manifest.lock */,
 				6D881E6E27F3676500D9C3D3 /* Sources */,
 				6D881E6F27F3676500D9C3D3 /* Frameworks */,
 				6D881E7027F3676500D9C3D3 /* Resources */,
+				29FE9F65C834157A4A650558 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29FE9F65C834157A4A650558 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OkHiExample/Pods-OkHiExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OkHiExample/Pods-OkHiExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OkHiExample/Pods-OkHiExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F80842E3C7D8ECC094193E44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OkHiExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6D881E6E27F3676500D9C3D3 /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		6D881E8727F3676700D9C3D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 672BD996F17B60EC3FCAAC1A /* Pods-OkHiExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -291,6 +361,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OkHiExample/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need always location permission to verify your address. ";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need always location permission to verify your address. ";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need access to your location to create an address at your current location.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -311,6 +384,7 @@
 		};
 		6D881E8827F3676700D9C3D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C1D5A9FCE2AD1F7008A0AD1 /* Pods-OkHiExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -318,6 +392,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OkHiExample/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need always location permission to verify your address. ";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need always location permission to verify your address. ";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need access to your location to create an address at your current location.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
