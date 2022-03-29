@@ -33,7 +33,7 @@ class ViewController: UIViewController {
     func startAddressCreation() {
         let okHiTheme = OkHiTheme().with(logoUrl: "https://cdn.okhi.co/icon.png").with(appBarColor: "#ba0c2f").with(appName: "OkHi")
         let okHiConfig = OkHiConfig().enableStreetView().enableAppBar()
-        guard let vc = okCollect.viewController(with: OkHiUser(phoneNumber: "+254700110590"), okHiTheme: okHiTheme, okHiConfig: okHiConfig) else {
+        guard let vc = okCollect.viewController(with: OkHiUser(phoneNumber: "+254712345678"), okHiTheme: okHiTheme, okHiConfig: okHiConfig) else {
             return
         }
         self.present(vc, animated: true, completion: nil)
