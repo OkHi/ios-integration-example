@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let okHiAuth = OkHiAuth(
             branchId: "<my_branch_id>",
             clientKey: "<my_client_key>",
-            environment: Environment.sandbox, // make sure to change this to prod when you're ready to go live 🚀
+            environment: OkHi.Environment.prod,
             appContext: okHiAppContext
         )
         OkCollect.initialize(with: okHiAuth)
