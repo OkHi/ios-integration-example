@@ -33,7 +33,10 @@ class ViewController: UIViewController {
     func startAddressCreation() {
         let okHiTheme = OkHiTheme().with(logoUrl: "https://cdn.okhi.co/icon.png").with(appBarColor: "#ba0c2f").with(appName: "OkHi")
         let okHiConfig = OkHiConfig().enableStreetView().enableAppBar()
-        guard let vc = okCollect.viewController(with: OkHiUser(phoneNumber: "+254712345678"), okHiTheme: okHiTheme, okHiConfig: okHiConfig) else {
+        guard let vc = okCollect.viewController(with: OkHiUser(phoneNumber: "+2348000000000")
+            .with(firstName: "Gift")
+            .with(lastName: "Moore")
+            .with(email: "gift@okhi.com"), okHiTheme: okHiTheme, okHiConfig: okHiConfig) else {
             return
         }
         self.present(vc, animated: true, completion: nil)
@@ -84,6 +87,10 @@ extension ViewController: OkVerifyDelegate {
     func verify(_ okverify: OkVerify, didUpdateLocationPermissionStatus status: CLAuthorizationStatus) {
         // called on each status change
         print("location permission status updated")
+    }
+    
+    func verify(_ okverify: OkVerify, didUpdateNotificationPermissionStatus status: Bool) {
+        print("push notification status updated")
     }
 }
 

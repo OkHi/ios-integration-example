@@ -15,8 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         let okHiAppContext = OkHiAppContext().withAppMeta(name: "OkHi Example", version: "1.0.0", build: "1")
         let okHiAuth = OkHiAuth(
-            branchId: "<my_branch_id>",
-            clientKey: "<my_client_key>",
+            branchId: "",
+            clientKey: "",
             environment: OkHi.Environment.prod,
             appContext: okHiAppContext
         )
